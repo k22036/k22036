@@ -1,7 +1,20 @@
-## Hi there 👋
+<!-- 1. GitHub usernameを変更 -->
+<div align="right">
+  <img src="https://komarev.com/ghpvc/?username=k22036" />
+</div>
+
+
+<!-- 4. GitHub usernameを変更, 2箇所 -->
+<!-- ライトモート：theme=light, ダークモート：theme=vue-dark  -->
+## 🏃‍♀️ Activities
+<div align="left"> 
+  <img alt="Top Langs" height="170px" src="https://github-readme-stats.vercel.app/api?username=k22036&theme=vue-dark&layout=compact" />
+  <img alt="github stats" height="170px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=k22036&theme=vue-dark&layout=compact" />
+</div>
+
 
 <!--
-**k22036/k22036** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This repository is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -14,3 +27,4 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
