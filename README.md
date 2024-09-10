@@ -3,6 +3,14 @@
   <img src="https://komarev.com/ghpvc/?username=k22036" />
 </div>
 
+<div>
+
+  ・portfolio
+
+  [https://k22036.github.io/portfolio/](https://k22036.github.io/portfolio/)
+
+</div>
+
 
 <!-- 4. GitHub usernameを変更, 2箇所 -->
 <!-- ライトモート：theme=light, ダークモート：theme=vue-dark  -->
