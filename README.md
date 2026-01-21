@@ -16,8 +16,8 @@
 <!-- ライトモート：theme=light, ダークモート：theme=vue-dark  -->
 ## 🏃‍♀️ Activities
 <div align="left"> 
-  <img alt="Top Langs" height="170px" src="https://github-readme-stats-kappa-bice-71.vercel.app/api?username=k22036&theme=vue-dark&layout=compact" />
-  <img alt="github stats" height="170px" src="https://github-readme-stats-kappa-bice-71.vercel.app/api/top-langs?username=k22036&theme=vue-dark&layout=compact&card_width=400" />
+  <img alt="Top Langs" height="170px" src="./profile/stats.svg" />
+  <img alt="github stats" height="170px" src="./profile/top-langs.svg" />
 </div>
 
 
