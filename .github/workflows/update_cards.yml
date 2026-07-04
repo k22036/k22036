@@ -18,7 +18,7 @@ jobs:
           persist-credentials: false
 
       - name: Generate stats card
-        uses: readme-tools/github-readme-stats-action@8614f3a61601854731381d853f8566867754a5ca # v2.0.0
+        uses: readme-tools/github-readme-stats-action@f9d8133845f40d659a754f78b8484983ba766448 # v2.0.1
         with:
           card: stats
           options: username=${{ github.repository_owner }}&theme=vue-dark&layout=compact
@@ -26,7 +26,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@8614f3a61601854731381d853f8566867754a5ca # v2.0.0
+        uses: readme-tools/github-readme-stats-action@f9d8133845f40d659a754f78b8484983ba766448 # v2.0.1
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&theme=vue-dark&layout=compact&card_width=400
