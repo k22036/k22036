@@ -5,9 +5,14 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+concurrency:
+  group: update-readme-cards
+  cancel-in-progress: false
+
 jobs:
-  build:
+  update-cards:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     permissions:
       contents: write
@@ -33,7 +38,7 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit cards
+      - name: Commit and push cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPOSITORY: ${{ github.repository }}
@@ -43,7 +48,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add profile/*.svg
-          git commit -m "Update README cards" || exit 0
+
+          if git diff --cached --quiet; then
+            echo "No card changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update README cards"
 
           # use GITHUB_TOKEN for a short-lived authenticated push without persisting credentials
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
