@@ -19,6 +19,7 @@ jobs:
   zizmor:
     name: Zizmor (Actions Security)
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: read
       actions: read
@@ -33,3 +34,20 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           advanced-security: false
           annotations: true
+
+  # ------------------------------------------------------------------
+  # 2. actionlint: GitHub Actions ワークフローの構文・式・シェル検査
+  # ------------------------------------------------------------------
+  actionlint:
+    name: actionlint (Workflow Lint)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Run actionlint
+        uses: raven-actions/actionlint@3d39aea434753780c3b3d4a1a31c854b4dbf49d7 # v2.2.0
