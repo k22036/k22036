@@ -58,4 +58,4 @@ jobs:
 
           # use GITHUB_TOKEN for a short-lived authenticated push without persisting credentials
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
-          git push origin HEAD:refs/heads/${REF_NAME}
+          git push origin "HEAD:refs/heads/${REF_NAME}"
